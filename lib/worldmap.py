@@ -23,11 +23,11 @@ class WorldMap(object):
         self.map = load_image("data/worldmap.png")
         self.logo = load_image("data/world-logo.png")
         self.frame = 0
-        if not os.path.exists("data/prog.sav"):
+        if not os.path.exists("prog.sav"):
             self.unlocked = 1
-            open("data/prog.sav", "wb").write(str(self.unlocked))
+            open("prog.sav", "wb").write(str(self.unlocked))
         else:
-            self.unlocked = int(open("data/prog.sav", "rU").read())
+            self.unlocked = int(open("prog.sav", "rU").read())
         self.num_levels = 0
         for i in range(8):
             if os.path.exists("data/level%d.png" % (i+1)):
@@ -66,7 +66,7 @@ class WorldMap(object):
                 credits.Credits().loop()
             if self.pos >= self.unlocked and self.pos < self.num_levels:
                 self.unlocked += 1
-                open("data/prog.sav", "wb").write(str(self.unlocked))
+                open("prog.sav", "wb").write(str(self.unlocked))
                 self.first_time = False
             else:
                 self.pos -= 1

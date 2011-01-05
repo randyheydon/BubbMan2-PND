@@ -1,8 +1,9 @@
 *.pyc
 *.pyo
 
-data/*.high
-data/prog.sav
+#Save files
+*.high
+prog.sav
 
 #distPND stuff
 build

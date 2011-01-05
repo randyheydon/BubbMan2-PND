@@ -7,7 +7,7 @@ from glob import glob
 
 setup(
     name = 'BubbMan2',
-    version = '1.0',
+    version = '1.0.1',
     description = 'A solo entry by pymike for PyWeek #8',
     author = 'pymike',
     maintainer = 'Tempel',

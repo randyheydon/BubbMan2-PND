@@ -8,8 +8,8 @@ rgl.util.set_global_sound_volume(0.6)
 
 def get_time(lvl):
     time = 10000.0
-    if os.path.exists("data/level%d.high" % lvl):
-        score = open("data/level%d.high" % lvl, "rU").read()
+    if os.path.exists("level%d.high" % lvl):
+        score = open("level%d.high" % lvl, "rU").read()
         time = float(score.split("\n")[0])
     return time
 
@@ -120,7 +120,7 @@ class Game(object):
             rgl.display.update()
         t = get_time(self.level)
         if self.time < t:
-            open("data/level%d.high" % self.level, "wb").write(str(self.time))
+            open("level%d.high" % self.level, "wb").write(str(self.time))
         pygame.mixer.music.stop()
     
     def restart(self):
