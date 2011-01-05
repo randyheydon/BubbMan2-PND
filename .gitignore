@@ -1,0 +1,10 @@
+*.pyc
+*.pyo
+
+data/*.high
+data/prog.sav
+
+#distPND stuff
+build
+build_pnd
+dist
