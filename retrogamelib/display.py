@@ -25,7 +25,8 @@ def init(scale=2.0, caption="NES Game", res=NESRES):
     pygame.display.set_caption(caption)
     screen = pygame.display.set_mode((
         int(resolution[0]*SCALE), 
-        int(resolution[1]*SCALE)))
+        int(resolution[1]*SCALE)),
+        FULLSCREEN)
     surface = pygame.Surface(NESRES)
     update()
     
