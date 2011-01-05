@@ -3,11 +3,12 @@ BubbMan 2
 
  A solo entry by pymike for PyWeek #8
  Copyright (C) 2009, released under the GNU LGPL (see License.txt)
+ Tweaked for the Pandora console by Tempel
  
 How to play
 =-=-=-=-=-=-=-=-=
 
- Use the arrows to move, the A Button to jump, and the B button to throw rocks. 
+ Use the arrows to move, the X/Y Buttons to jump, and the A/B buttons to throw rocks. 
 
  When you move, you consume energy. You can replenish it by grabbing
  the fruit located throughout the levels. If you run out, you're dead!
@@ -40,10 +41,10 @@ Control Chart
  
  In-Game       Keyboard       Gamepad
  ``````````````````````````````````````
- A Button      Z Key          Button 3
- B Button      X Key          Button 4
- START         Enter          Button 9
- SELECT        R. Shift       Button 10
+ A Button      Z Key          X/Y Buttons
+ B Button      X Key          A/B Buttons
+ START         Enter          START
+ SELECT        R. Shift       SELECT
 
 Credits
 =-=-=-=-=-=-=-=-=

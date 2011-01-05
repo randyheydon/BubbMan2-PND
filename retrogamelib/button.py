@@ -22,6 +22,15 @@ class Handler(object):
         self.bind_key(START, 8)
         self.bind_key(SELECT, pygame.K_RSHIFT)
         self.bind_key(SELECT, 9)
+        #Buttons for Pandora
+        self.bind_key(A_BUTTON, pygame.K_PAGEDOWN)
+        self.bind_key(A_BUTTON, pygame.K_PAGEUP)
+        self.bind_key(B_BUTTON, pygame.K_HOME)
+        self.bind_key(B_BUTTON, pygame.K_END)
+        self.bind_key(START, pygame.K_RALT)
+        self.bind_key(START, pygame.K_LALT)
+        self.bind_key(SELECT, pygame.K_RCTRL)
+        self.bind_key(SELECT, pygame.K_LCTRL)
      
         self.bind_key(LEFT, pygame.K_LEFT)
         self.bind_key(LEFT, "dleft")
