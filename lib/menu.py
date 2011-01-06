@@ -7,7 +7,7 @@ import worldmap, intro
 class Menu(object):
     
     def __init__(self):
-        rgl.display.init(1, "BubbMan 2", NESRES)
+        rgl.display.init(2, "BubbMan 2", NESRES)
         intro.Intro().loop()
         self.font_white = rgl.font.Font(NES_FONT, (255, 255, 255))
         self.font_black = rgl.font.Font(NES_FONT, (1, 1, 1))

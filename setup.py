@@ -7,7 +7,7 @@ from glob import glob
 
 setup(
     name = 'BubbMan2',
-    version = '1.0.2',
+    version = '1.0.3',
     description = 'A solo entry by pymike for PyWeek #8',
     long_description = open('Readme.txt').read(),
     author = 'pymike',
