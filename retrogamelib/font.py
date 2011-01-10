@@ -17,6 +17,7 @@ class Font(object):
         self.color = color
         strip = pygame.image.load(os.path.dirname(__file__) + \
             "/" + self.font["file"]).convert_alpha()
+        strip.set_colorkey((255, 0, 255), pygame.RLEACCEL)
         for x in range(len(format)):
             letters[format[i]] = pygame.Surface(self.font["size"])
             letters[format[i]].blit(strip, (-x*self.font["size"][0], 0))
