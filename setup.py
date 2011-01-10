@@ -18,5 +18,5 @@ setup(
     package_data = {'retrogamelib': ['*.png']},
     data_files = [('data', glob('data/*'))],
     scripts = ['run_game.py'],
-    license = 'GPL',
+    license = 'LGPL',
 )
