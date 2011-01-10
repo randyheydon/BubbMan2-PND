@@ -15,7 +15,8 @@ IMAGES = {}
 def load_image(filename):
     if filename not in IMAGES:
         IMAGES[filename] = pygame.image.load(
-            filepath(filename)).convert_alpha()
+            filepath(filename)).convert()
+        IMAGES[filename].set_colorkey((255, 0, 255), pygame.RLEACCEL)
     return IMAGES[filename]
 
 def play_music(filename, loop=0, volume=1.0):
