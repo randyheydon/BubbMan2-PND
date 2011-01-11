@@ -14,10 +14,13 @@ def filepath(path):
 IMAGES = {}
 def load_image(filename, colorkey=(255,0,255)):
     if filename not in IMAGES:
-        IMAGES[filename] = pygame.image.load(
-            filepath(filename)).convert()
         if colorkey is not None:
+            IMAGES[filename] = pygame.image.load(
+                filepath(filename)).convert()
             IMAGES[filename].set_colorkey(colorkey, pygame.RLEACCEL)
+        else:
+            IMAGES[filename] = pygame.image.load(
+                filepath(filename)).convert_alpha()
     return IMAGES[filename]
 
 def play_music(filename, loop=0, volume=1.0):
