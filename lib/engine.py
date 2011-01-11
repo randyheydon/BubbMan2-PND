@@ -6,7 +6,7 @@ class Engine(object):
     def __init__(self, game, level):
         self.level = level
         self.tiles = []
-        self.image = rgl.util.load_image("data/level%d.png" % level)
+        self.image = rgl.util.load_image("data/level%d.png" % level, colorkey=None)
         if self.level >= 6:
             self.world = 2
         else:
@@ -25,7 +25,7 @@ class Engine(object):
         self.game = game
 
     def parse_level(self):
-        self.image = rgl.util.load_image("data/level%d.png" % self.level)
+        self.image = rgl.util.load_image("data/level%d.png" % self.level, colorkey=None)
         tiles = []
         self.tiles = []
         platforms = [[0, 0, 0], [150, 150, 150]]

@@ -12,11 +12,12 @@ def filepath(path):
         return os.path.join(path)
 
 IMAGES = {}
-def load_image(filename):
+def load_image(filename, colorkey=(255,0,255)):
     if filename not in IMAGES:
         IMAGES[filename] = pygame.image.load(
             filepath(filename)).convert()
-        IMAGES[filename].set_colorkey((255, 0, 255), pygame.RLEACCEL)
+        if colorkey is not None:
+            IMAGES[filename].set_colorkey(colorkey, pygame.RLEACCEL)
     return IMAGES[filename]
 
 def play_music(filename, loop=0, volume=1.0):
